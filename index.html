@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/main.css">
     <title>Right Place - Find Your Property</title>
 </head>
@@ -14,14 +17,27 @@
     <div id="hero">
         <!-- Navigation -->
         <nav>
-            <div class="container navbar">
+            <div class="container navbar flex">
                 <div class="navbar-brand">
                     <a href=".">
                         <img src="images/logo-invert (1).png" alt="">
                     </a>
                 </div>
-                <div class="main-navigation">
-                    X
+                <div class="main-navigation flex">
+                    <div class="main-nav-links">
+                        <ul id="primary-navigation">
+                            <li><a href="#">Buy</a></li>
+                            <li><a href="#">Rent</a></li>
+                            <li><a href="#">Find Agent</a></li>
+                            <li><a href="#">Commercial</a></li>
+                            <li><a href="#">Property Advice</a><i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+                            <li><a href="#">Company</a><i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="site-login">
+                    <a href="#">Sign in</a>
+                    <button>Post Your Ad</button>
                 </div>
             </div>
         </nav>
@@ -29,16 +45,22 @@
             <div class="container">
                 <h1>Find Your Property</h1>
                 <p>Search properties for sale and rent in Sri Lanka</p>
-                <form>
+                <form class="search-form">
                     <div class="frm-inputs">
-                        <div class="frm-location">
+                        <div class="location">
                             <input type="text" name="" id="" placeholder="Location" />
+                            <span class="frm-seperator"></span>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="frm-property-type">
+                        <div class="property-type">
                             <input type="text" name="" id="" placeholder="Property Type" />
+                            <span class="frm-seperator"></span>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="frm-select-cat">
+                        <div class="select-cat">
                             <input type="text" name="" id="" placeholder="Select Category" />
+                            <span class="frm-seperator"></span>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="frm-search-btns">
@@ -46,13 +68,6 @@
                         <button>For Rent</button>
                     </div>
                 </form>
-                <div uk-slider="finite: true">
-                    <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@ uk-grid">
-                        <li>
-                            <img src="" alt="">
-                        </li>
-                    </ul>
-                </div>
             </div>
         </section>
     </div>
