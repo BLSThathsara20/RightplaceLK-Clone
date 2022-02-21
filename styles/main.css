@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    /* colors */
+    --mob-nav-bg: #0d0b14;
+
+    --primary-color: #1072bc;
+    --button-primary-color: #1AA0E3;
+    --button-text-color: #ffffff;
+    --text-color-white: #fff;
+    --primary-text-color: #707070;
+    --form-bg-color: rgba(16, 113, 188, 0.55);
+    --blue: #007bff;
+
+    /* font sizes */
+    --hero-font-size: 4.68rem;
+    --hero-sub-font-size: 1.25rem;
+    --default-font-size: 1rem;
+    --header-font-size: 1rem;
+
+    /* Border radius */
+    --default-border-radius: .3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Style */
+.container{
+    padding: .5rem;
+}
+
+nav img{
+    max-width: 155px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hero background */
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/home_slider1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Home search form style */
+.home-search-form{
+    color: var(--text-color-white);
+    text-align: center;
+}
+
+.home-search-form h1{
+    font-size: var(--hero-font-size);
+    font-weight: 600;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.home-search-form p{
+    font-size: var(--hero-sub-font-size);
+    font-weight: 300;
+    padding: 1rem 0rem;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+form input[type=text]{
+    min-width: 85vw;
+    min-height: 2.8rem;
+    border-radius: var(--default-border-radius);
+    padding: 0rem .8rem;
+    margin-bottom: .7rem;
+    outline: none;
+    border: none;
+    font-size: var(--default-font-size);
+    color: var(--primary-text-color);
+}
+form input:focus{
+    border: 1px solid var(--blue);
+}
+
+form .frm-search-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+form button{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: var(--default-border-radius);
+    font-size: var(--default-font-size);
+    cursor: pointer;
+    color: var(--text-color-white);
+    background-color: var(--button-primary-color);
+}
+
+form button:first-child{
+    margin-right: .3rem;
+}
+
+form button:nth-child(2){
+    margin-left: .3rem;
+}
+
+form {
+    display: inline-block;
+    padding: .8rem;
+    border-radius: .5rem;
+    background-color: var(--form-bg-color);
+}
