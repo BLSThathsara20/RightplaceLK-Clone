@@ -115,7 +115,7 @@ nav img{
     }
 
     .mobile-nav-toggle{
-        position: absolute;
+        position: fixed;
         z-index: 9999;
         background-color: transparent;
         display: block;
@@ -240,6 +240,9 @@ form {
 
 /* Medium devices (landscape tablets, 768px and up) Style*/
 @media only screen and (min-width: 768px){
+    #hero{
+        height: 75vh;
+    }
     /* home-search-form style */
     .frm-inputs{
         display: grid;
