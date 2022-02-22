@@ -251,7 +251,6 @@ form {
 /* Style main link cards */
 .main-cards a{
     text-decoration: none;
-    margin: 3rem 0rem;
 }
 
 .main-cards a h2{
@@ -273,12 +272,13 @@ form {
 .main-cards a:hover{
     background-color: var(--button-primary-color);
     border-radius: var(--default-border-radius);
-    transition: all 350ms ease-out;
+    transition: all 450ms ease-in-out;
 }
 
 .main-link-card-grid{
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    gap: 1rem;
+    margin: 3rem 0rem;
 }
 
 .main-link-card{
@@ -393,5 +393,15 @@ form {
 
     .frm-search-btns{
         width: 100%;
+    }
+
+    /* Style main link cards */
+    .main-link-card-grid{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .main-cards{
+        margin: 3rem 0rem;
     }
 }
