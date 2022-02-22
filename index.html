@@ -20,12 +20,18 @@
             <div class="container navbar flex">
                 <div class="navbar-brand">
                     <a href=".">
-                        <img src="images/logo-invert (1).png" alt="">
+                        <img src="images/logo-invert (1).png" alt="" aria-hidden="true">
                     </a>
                 </div>
-                <div class="main-navigation flex">
+
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <i id="toggler" class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="main-navigation" data-visible="false">
                     <div class="main-nav-links">
-                        <ul id="primary-navigation">
+                        <ul id="primary-navigation" >
                             <li><a href="#">Buy</a></li>
                             <li><a href="#">Rent</a></li>
                             <li><a href="#">Find Agent</a></li>
@@ -41,6 +47,9 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Home Search Form -->
+
         <section class="home-search-form">
             <div class="container">
                 <h1>Find Your Property</h1>
@@ -72,7 +81,7 @@
         </section>
     </div>
 
-    <script src="scripts/index.js"></script>
+    <script src="scripts/index.js" defer></script>
 </body>
 
 </html>
