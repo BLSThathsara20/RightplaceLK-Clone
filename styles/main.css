@@ -5,14 +5,17 @@
     --mob-nav-bg: #0d0b14;
 
     --post-add-btn-background: #e11a3f;
+    --post-add-btn-background-hover: #d3183b;
     --primary-color: #1072bc;
     --button-primary-color: #1AA0E3;
     --button-text-color: #ffffff;
     --text-color-white: #fff;
     --primary-text-color: #707070;
     --form-bg-color: rgba(16, 113, 188, 0.55);
+    --card-border-color: #dadada;
     --blue: #007bff;
     --white: #fff;
+    --black: #000;
 
     /* font sizes */
     --hero-font-size: 4.68rem;
@@ -20,6 +23,7 @@
     --hero-sub-font-size: 1.25rem;
     --default-font-size: 1rem;
     --header-font-size: 1rem;
+    --h2 : 1.375rem;
 
     /* Border radius */
     --default-border-radius: .3rem;
@@ -86,11 +90,17 @@ nav img{
 .site-login button{
     border: 1px solid var(--white);
     border-radius: var(--default-border-radius);
-    font-size: var(--default-font-size);
+    font-size: 1.1rem;
+    font-weight: 400;
     background-color: var(--post-add-btn-background);
+    transition: background 350ms ease-out;
     color: var(--white);
-    padding: .8rem 1.1rem;
+    padding: .7rem 1.1rem;
     cursor: pointer;
+}
+
+.site-login button:hover{
+    background-color: var(--post-add-btn-background-hover);
 }
 
 @media (max-width: 1200px) {
@@ -115,7 +125,7 @@ nav img{
     }
 
     .mobile-nav-toggle{
-        position: fixed;
+        position: absolute;
         z-index: 9999;
         background-color: transparent;
         display: block;
@@ -236,6 +246,46 @@ form {
     padding: .8rem;
     border-radius: .5rem;
     background-color: var(--form-bg-color);
+}
+
+/* Style main link cards */
+.main-cards a{
+    text-decoration: none;
+    margin: 3rem 0rem;
+}
+
+.main-cards a h2{
+    font-weight: 500;
+    font-size: var(--h2);
+    color: var(--black);
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.main-cards a p,span{
+    font-weight: 300;
+    font-size: var(--default-font-size);
+    color: var(--primary-text-color);
+    margin-bottom: .313rem;
+    line-height: 1.4;
+}
+
+.main-cards a:hover{
+    background-color: var(--button-primary-color);
+    border-radius: var(--default-border-radius);
+    transition: all 350ms ease-out;
+}
+
+.main-link-card-grid{
+    display: flex;
+    gap: 2rem;
+}
+
+.main-link-card{
+    height: auto;
+    padding: 1.25rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: var(--default-border-radius);
 }
 
 /* Medium devices (landscape tablets, 768px and up) Style*/
