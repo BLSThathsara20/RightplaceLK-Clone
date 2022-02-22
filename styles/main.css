@@ -93,7 +93,7 @@ nav img{
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .main-navigation{
         position: fixed;
         z-index: 1000;
@@ -132,7 +132,7 @@ nav img{
 
     @supports (backdrop-filter: blur(1rem)){
         .main-navigation{
-            background: hsla(205, 100%, 50%, 0.1);
+            background: hsla(205, 100%, 50%, 0.5);
             backdrop-filter: blur(1rem);
         }
     }
@@ -239,7 +239,29 @@ form {
 }
 
 /* Medium devices (landscape tablets, 768px and up) Style*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
+    /* home-search-form style */
+    .frm-inputs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .6rem;
+    }
+
+    .site-login{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-right: 5.5rem;
+        margin-top: .5rem;
+    }
+
+    .site-login-nav-link{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 1200px and up) Style*/
+@media only screen and (min-width: 1200px) {
     .container{
         max-width: 1280px;
         margin: 0 auto;
@@ -250,23 +272,24 @@ form {
     }
 
     /* Navigation style */
-    .mobile-nav-toggle{
-        display: none;
-    }
-
     .site-login{
         display: flex;
         gap: 1rem;
         align-items: center;
+        margin-top: 0rem;
     }
     
-
     nav img{
         margin: .5rem 0rem;
     }
 
+    .mobile-nav-toggle{
+        display: none;
+    }
+
     .main-navigation{
         display: flex;
+        flex-wrap: nowrap;
     }
 
     #primary-navigation{
@@ -283,11 +306,21 @@ form {
     form {
         margin: 0rem 4rem;
         min-width: auto;
-        display: flex;
+    }
+
+    form .frm-inputs i{
+        padding-right: 8rem;
+    }
+
+    .search-form{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
     }
     
     .frm-inputs{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0rem;
     }
 
     form input[type=text]:nth-child(2){
