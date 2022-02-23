@@ -1,17 +1,16 @@
 // Improt the property module
 import * as proprty from './property.js';
 
+// Colors
+const white = '#fff';
+const black = '#000';
+const primaryTextColor = '#707070';
 
 // Site preloader function
 const loader = document.querySelector('#site-preloader');
 window.addEventListener('load', () => {
     loader.parentElement.removeChild(loader);
 });
-
-// Colors
-const white = '#fff';
-const black = '#000';
-const primaryTextColor = '#707070';
 
 const primaryNav = document.querySelector('.main-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
