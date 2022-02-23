@@ -1,3 +1,13 @@
+// Improt the property module
+import * as proprty from './property.js';
+
+
+// Site preloader function
+const loader = document.querySelector('#site-preloader');
+window.addEventListener('load', () => {
+    loader.parentElement.removeChild(loader);
+});
+
 // Colors
 const white = '#fff';
 const black = '#000';
