@@ -346,10 +346,13 @@ form {
 
 .carousel-track-container{
     background-color: #d3183b;
+    overflow: hidden;
 }
 
 .carousel-track-container ul{
     list-style: none;
+    height: 100%;
+    transition: transform 250ms ease-in;
 }
 
 .carousel-btn{
@@ -395,6 +398,55 @@ form {
     background-color: var(--white);
 }
 
+.banner-description{
+    margin-bottom: 2rem;
+}
+
+.banner-description hr{
+    background-color: var(--card-border-color);
+    height: .1rem;
+    border: none;
+    margin: 1.8rem 0;
+}
+
+.banner-description h2{
+    font-size: calc(var(--h2) + .38rem);
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.banner-description p{
+    font-size: var(--default-font-size);
+    font-weight: 300;
+    line-height: 1.45;
+    margin: calc(var(--default-font-size) - .4rem) 0;
+    color: var(--primary-text-color);
+}
+
+/* Map navigation Style */
+.banner-container{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.map-navigation svg{
+    fill: var(--primary-color);
+    max-width: 100%;
+    max-height: 80%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.map-navigation svg path{
+    cursor: pointer;
+    stroke: var(--white);
+}
+
+.map-navigation svg path:hover{
+    fill: var(--button-primary-color)
+}
+
+
 
 
 
@@ -434,6 +486,19 @@ form {
         transform: translateX(-50%);
         left: 50%;
     }
+
+    /* Map navigation Style */
+    .banner-container{
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+
+    .map-navigation svg{
+        max-width: 100%;
+        height: 75vh;
+        padding-left: 1.8rem;
+        padding-right: 0rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 1200px and up) Style*/
@@ -449,10 +514,8 @@ form {
 
     /* Navigation style */
     .site-login{
-        display: flex;
         gap: 1rem;
-        align-items: center;
-        margin-top: 0rem;
+        margin: 0rem;
     }
     
     nav img{
@@ -539,7 +602,7 @@ form {
 
     /* Property banner carousel style */
     .carousel{
-        max-width: 75%;
+        max-width: 100%;
     }
 
     .carousel-btn{
@@ -551,4 +614,6 @@ form {
         transform: translateX(-50%);
         left: 50%;
     }
+
+    /* Map navigation Style */
 }
