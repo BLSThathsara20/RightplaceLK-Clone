@@ -301,7 +301,7 @@ form {
 
 .main-link-card{
     height: auto;
-    padding: 1.25rem;
+    padding: 1.5rem;
     border: 1px solid var(--card-border-color);
     border-radius: var(--default-border-radius);
 }
@@ -333,7 +333,6 @@ form {
 .carousel{
     position: relative;
     max-width: 100%;
-    height: 11rem;
 }
 
 .carousel-images{
@@ -386,7 +385,7 @@ form {
 
 .carousel-nav{
     position: absolute;
-    bottom: 3rem;
+    bottom: 1.2rem;
     transform: translateX(-50%);
     left: 50%;
     z-index: 10;
@@ -426,17 +425,12 @@ form {
     }
 
     /* Property banner carousel style */
-    .carousel{
-        height: 28rem;
-    }
-
     .carousel-btn{
         top: 50%;
         transform: translateY(-50%);
     }
 
     .carousel-nav{
-        bottom: 3rem;
         transform: translateX(-50%);
         left: 50%;
     }
@@ -546,7 +540,6 @@ form {
     /* Property banner carousel style */
     .carousel{
         max-width: 75%;
-        height: 27rem;
     }
 
     .carousel-btn{
@@ -555,7 +548,6 @@ form {
     }
 
     .carousel-nav{
-        bottom: 3rem;
         transform: translateX(-50%);
         left: 50%;
     }

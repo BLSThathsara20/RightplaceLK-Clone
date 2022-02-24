@@ -1,5 +1,6 @@
-// Improt the property module
+// Improt the modules
 import * as proprty from './property.js';
+import * as carousel from './carousel.js';
 
 // Colors
 const white = '#fff';
@@ -89,4 +90,7 @@ mainLinkCardSelect3.addEventListener('mouseleave', () => {
     }
     mainLinkCardStyle3[0].style.color = black;
 });
+
+// Set caousel height
+carousel.setCarouselHeight();
 
