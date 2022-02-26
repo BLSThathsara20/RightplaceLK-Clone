@@ -25,6 +25,8 @@
     --default-font-size: 1rem;
     --header-font-size: 1rem;
     --h2 : 1.375rem;
+    --main-heading-2 : 3.75rem;
+    --counter-font-size: 2rem;
 
     /* Border radius */
     --default-border-radius: .3rem;
@@ -444,6 +446,48 @@ form {
 
 .map-navigation svg path:hover{
     fill: var(--button-primary-color)
+}
+
+ /* Home post add section style */
+.home-post-add-section{
+    background: url('/images/bg_ad.jpg') no-repeat;
+    text-align: center;
+}
+
+.home-post-add h1{
+    font-size: var(--main-heading-2);
+    color: var(--white);
+    font-weight: 500;
+    padding-top: 1.313rem;
+}
+
+.home-post-add p{
+    font-size: calc(var(--default-font-size) + .125rem);
+    color: var(--white);
+    line-height: 1.5;
+    letter-spacing: .05rem;
+    padding: 0 3rem;
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+.property-count{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+}
+
+.counter h2{
+    font-size: var(--counter-font-size);
+    color: var(--white);
+    letter-spacing: .02rem;
+}
+
+.counter p{
+    font-size: var(--default-font-size);
+    color: var(--white);
+    letter-spacing: .02rem;
+    margin: 0;
 }
 
 

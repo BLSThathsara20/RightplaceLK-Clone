@@ -7,6 +7,9 @@ const white = '#fff';
 const black = '#000';
 const primaryTextColor = '#707070';
 
+//Add footer date
+document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+
 // Site preloader function
 const loader = document.querySelector('#site-preloader');
 window.addEventListener('load', () => {
