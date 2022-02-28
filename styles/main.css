@@ -14,6 +14,7 @@
     --form-bg-color: rgba(16, 113, 188, 0.55);
     --footer-top-background-color: #242424;
     --card-border-color: #dadada;
+    --footer-bottom-color: #1e1e1e;
     --blue: #007bff;
     --white: #fff;
     --black: #000;
@@ -197,13 +198,10 @@ nav img{
     padding: 1rem 0rem;
     max-width: 70%;
     margin: 0 auto;
+    color: var(--white);
 }
 
-form {
-    min-width: 92vw;
-}
-
-form input[type=text]{
+.search-form input[type=text]{
     min-width: 85%;
     min-height: 2.8rem;
     border-radius: var(--default-border-radius);
@@ -262,11 +260,12 @@ form .frm-search-btns{
     margin-left: .3rem;
 }
 
-form {
+.search-form {
     display: inline-block;
     padding: .8rem;
     border-radius: .5rem;
     background-color: var(--form-bg-color);
+    min-width: 92vw
 }
 
 /* Style main link cards */
@@ -628,7 +627,7 @@ form {
 .footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .footer-contact p{
@@ -637,16 +636,46 @@ form {
     margin-bottom: 1rem;
 }
 
-.footer-newsletter p{
-    max-width: 50%;
+.frm-newsletter form{
+    display: flex;
+    background-color: transparent;
+    border: none;
 }
 
-.frm-newsletter form{
+.frm-newsletter form input[type="email"]{
     background-color: transparent;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0;
+    border: none;
 }
+
+.frm-newsletter form input[type="email"]:focus{
+    border: none;
+}
+
+.frm-newsletter form button[type="submit"]{
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid var(--primary-text-color);
+}
+
+.frm-newsletter form {
+    background-color: transparent;
+    border: .12rem solid var(--primary-text-color);
+}
+
+/* Style footer bar */
+.footer-bar{
+    background-color: var(--footer-bottom-color);
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Medium devices (landscape tablets, 768px and up) Style*/
 @media only screen and (min-width: 768px){
