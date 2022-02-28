@@ -12,6 +12,7 @@
     --text-color-white: #fff;
     --primary-text-color: #707070;
     --form-bg-color: rgba(16, 113, 188, 0.55);
+    --footer-top-background-color: #242424;
     --card-border-color: #dadada;
     --blue: #007bff;
     --white: #fff;
@@ -568,16 +569,84 @@ form {
     text-align: center;
 }
 
-.quick-call a, span{
+.quick-call a{
     text-decoration: none;
     color: var(--white);
     font-size: var(--counter-font-size);
 }
 
 .quick-call span{
+    color: var(--white);
+}
+
+.quick-call span{
     display: block;
 }
 
+/* Style footer */
+.footer-links{
+    padding: 3rem 0.938rem 0 0.938rem;
+    background-color: var(--footer-top-background-color);
+}
+
+.footer img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+.footer a, span, p{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: var(--primary-text-size);
+}
+
+.footer h3{
+    color: var(--white);
+    font-size: var(--primary-text-size);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.044rem;
+    font-weight: 500;
+    line-height: 1.188rem;
+    color: var(--card-border-color);
+}
+
+.footer-contact li a{
+    display: block;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer li{
+    margin-bottom: .5rem;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.footer-contact p{
+    padding-top: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.footer-newsletter p{
+    max-width: 50%;
+}
+
+.frm-newsletter form{
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
 
 /* Medium devices (landscape tablets, 768px and up) Style*/
 @media only screen and (min-width: 768px){
