@@ -508,6 +508,10 @@ form {
 }
 
 /* why rightplace use section style */
+.why-rightplace-use{
+    padding: 6% 0;
+}
+
 .why-rightplace-use h1{
     font-size: calc(var(--hero-font-size) - 1.867rem);
     color: var(--primary-color);
@@ -553,8 +557,26 @@ form {
     margin-bottom: 1.875rem;
 }
 
+/* style Quick Call section */
+#quick-call{
+    overflow-x: hidden;
+    background: var(--button-primary-color);
+}
 
+.quick-call{
+    padding: 2% 0;
+    text-align: center;
+}
 
+.quick-call a, span{
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--counter-font-size);
+}
+
+.quick-call span{
+    display: block;
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) Style*/
