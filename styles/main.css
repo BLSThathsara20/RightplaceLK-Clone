@@ -313,17 +313,42 @@ form .frm-search-btns{
     position: relative;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .dropdown-menu{
     position: absolute;
     left: 0;
     right: -.53rem;
     top: calc(100% + 1rem);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-    opacity: 1;
+    opacity: 0;  /* Opacity 0 */
     pointer-events: none;
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
 
 .location > input:focus + .dropdown-menu{
     opacity: 1;
@@ -667,6 +692,42 @@ form .frm-search-btns{
     background-color: var(--footer-bottom-color);
 }
 
+/* Style footer bar */
+.footer-bar-columns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social-icons ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: var(--primary-text-size);
+}
+
+.hexacode-link a,.back-to-top a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight:500;
+    font-size: var(--primary-text-size);
+}
+
+.back-to-top a{
+    font-size: var(--primary-text-size);
+}
+
+.back-to-top i{
+    padding-right: .5rem;
+    color: var(--primary);
+    font-size: var(--primary-text-size);
+}
+
+.footer-bar-columns{
+    padding: 1rem 0;
+}
+
 
 
 
@@ -724,6 +785,127 @@ form .frm-search-btns{
         padding-left: 1.8rem;
         padding-right: 0rem;
     }
+
+    /* Home post add section */
+    .property-count{
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    .sell-property-count ,.commercial-property-count, .agents-count{
+        border-left: 1px solid var(--card-border-color);
+    }
+
+    .rent-property-count{
+        border-left: none; 
+    }
+
+    .home-post-add button{
+        margin-bottom: 5rem;
+    }
+
+    .home-post-add h1{
+        margin-top: 5rem;
+    }
+
+    .home-post-add p{
+        max-width: 65%;
+        margin: 0 auto;
+        padding-top: 1rem; 
+    }
+
+    /* Style Why Rightplace use */
+    .why-rightplace-use-description{
+        max-width: 70%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .proprty-option-column{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .option-info{
+        margin-left: 1rem;
+    }
+
+    .option-info p{
+        text-align: left;
+        max-width: 80%;
+    }
+
+    .option-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Style Quick Call section */
+    .quick-call span {
+        display: inline-block;
+        padding-left: .5rem;
+    }
+
+    /* Style Footer */
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .footer-contact li a{
+        display: inline-block;
+        padding-left: .5rem;
+        transition: all 300ms ease-in;
+    }
+    .footer li a{
+        transition: all 300ms ease-in;
+    }
+
+    .footer li a:hover{
+        color: var(--primary-color);
+    }
+
+    .footer-contact li a:hover{
+        color: var(--primary-color);
+    }
+
+    .frm-newsletter form{
+        max-width: 75%;
+        margin-top: 1rem;
+    }
+
+    .frm-newsletter form input{
+        padding-left: .4rem;
+        color: var(--primary-text-color);
+        font-size: var(--default-font-size);
+    }
+
+    .frm-newsletter form button i{
+        padding: .4rem;
+    }
+
+    .footer-links{
+        padding: 5rem 0;
+    }
+
+    /* Style footer bar */
+    .footer-bar-columns{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-icons ul{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        font-size: var(--primary-text-size);
+    }
+
 }
 
 /* Medium devices (landscape tablets, 1200px and up) Style*/
@@ -776,12 +958,12 @@ form .frm-search-btns{
         margin: 8rem 0rem 0rem 0rem;
     }
 
-    form {
+    .search-form {
         margin: 0rem 4rem;
         min-width: auto;
     }
 
-    form .frm-inputs i{
+    .search-form .frm-inputs i{
         padding-right: 8rem;
     }
 
@@ -796,12 +978,12 @@ form .frm-search-btns{
         gap: 0rem;
     }
 
-    form input[type=text]:nth-child(2){
+    .search-form input[type=text]:nth-child(2){
         margin-left: .6rem;
         margin-right: .6rem;
     }
 
-    form input[type=text]:nth-child(3){
+    .search-form input[type=text]:nth-child(3){
         margin-right: .6rem;
     }
 
